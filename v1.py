@@ -41,15 +41,17 @@ def random_numbers():
   print('''
   [ FACEBOOK CRACKER RANDOM NUMBERS ]
 
-  Isi nomor awalnya ya Bro tanpa angka 0
-  Harus 5 digit gak boleh kurang dan gak boleh lebih.
+  IsiFill in the starting number, bro, without the number 0
+
+  5 digits should not be less and should not be more.
+  .
   Contoh: 86382
   ''')
-  kode=str(input('  Masukan nomor awal: '))
-  exit('  Nomor harus 5 digit ya kaka ga boleh kurang.') if len(kode) < 5 else ''
-  exit('  Nomor harus 5 digit ya kaka ga boleh lebih.') if len(kode) > 5 else ''
+  kode=str(input('  Enter the starting number: '))
+  exit('  Number must be 5 digits so it can't be less .') if len(code) < 5 else ''
+  exit('  Number must b 5 digits it can't be more ih.') if len(code) > 5 else ''
   jml=int(input('''
-  Masukan jumlah nomor yang akan dibuat contoh: 10
+  the number of numbers that will be made an example: 10
   Jumlah: '''))
   [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:]), str(e[7:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,8)]) for e in range(jml)]]
   print('''
@@ -80,10 +82,10 @@ def random_email():
   }
   exit('  Mohon isi yang bener ya bro.') if not domain in ['g','y','h'] else ''
   jml=int(input('''
-  Masukan jumlah email yang akan dibuat contoh: 10
+  the number of numbers that will be made an example: 10
   Jumlah: '''))
-  setpw=input('''
-  Set password yg mendekati nama pengguna
+  setpw=input('''yg
+  Set password approximate user name
   contoh: putri123,putri1234
   Set password: ''').split(',')
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
@@ -102,8 +104,8 @@ def pilih():
  / /_/ / _` |/ __| |/ / _ \ '__|
 / __  / (_| | (__|   <  __/ |   
 \/ /_/ \__,_|\___|_|\_\___|_|
-  1. Crack dari nomor random
-  2. crack dari email random
+  1. Crack forme Num random
+  2. crack firme email random
   ''')
   pil=int(input('  Pilih mana bro ?: '))
   if pil == 1:
